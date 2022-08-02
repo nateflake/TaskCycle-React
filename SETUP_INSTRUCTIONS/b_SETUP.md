@@ -41,8 +41,7 @@ dotnet sln add API
 > In Code > Preferences > Settings:
   - search for 
     "exclude"
-  - add pattern
-    **/bin
-- add pattern
-    **/obj
+  - add patterns:
+      **/bin
+      **/obj
 
