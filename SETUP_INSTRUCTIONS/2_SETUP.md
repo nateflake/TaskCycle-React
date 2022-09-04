@@ -44,4 +44,3 @@ dotnet sln add API
   - add patterns:
       **/bin
       **/obj
-

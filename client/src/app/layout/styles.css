@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+  --onColor: rgba(0, 0, 0, 0.54);
+  --offColor: rgba(192, 192, 192);
+  --darkest: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 10px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  height: 40px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-max {
+  min-width: 200px;
+}
+
+.task {
+  min-width: 450px;
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 15px 10px 20px;
+  display: space-between;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.singleTitle {
+  font-size: 2em
+}
+
+.singleText {
+  font-size: 1.17em;
+}
+
+.singleTask {
+  width: 450px;
+  margin: 5px;
+  padding: 10px 15px 10px 20px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+}
+
+.singleTask span {
+  font-weight: bold;
+  cursor: pointer
+}
+
+.singleTask span span {
+  opacity: 0.8;
+  cursor: pointer
+}
+
+.statusItem {
+  margin-top: 15px;
+  margin-left: 130px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.singleTask .itemStatus {
+  font-size: 1.5em;
+  opacity: 0.8;
+}
+
+.singleTask .itemSubText1 {
+  font-size: 1.17em;
+  opacity: 0.7;
+}
+
+.singleTask .itemSubText2 {
+  font-size: 1em;
+  opacity: 0.6;
+}
+
+.inactive {
+  cursor: default;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control .input-large {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control .input-small {
+  width: 80%;
+  height: 30px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 13px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.filterMenuOuterContainer .MuiBox-root .MuiBox-root .MuiIconButton-root {
+  height: 25px;
+}
+
+.menuArrow {
+  height: 25px;
+}
+
+.taskLeadButton {
+  margin-left: 10px;
+}
+
+.taskTitle {
+  color: var(--darkest);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.taskText {
+  color: var(--darkest);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.taskTime {
+  color: var(--darkest);
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.on {
+  color: var(--onColor);
+  cursor: 'pointer';
+}
+
+.off {
+  color: var(--offColor);
+  cursor: 'pointer';
+}
+
+.disabled {
+  color: var(--offColor);
+  opacity: 0.5;
+  cursor: 'pointer';
+}
+
+.dropIcon {
+  opacity: 0.5;
+}

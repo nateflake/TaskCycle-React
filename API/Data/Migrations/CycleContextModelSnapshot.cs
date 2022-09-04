@@ -23,38 +23,35 @@ namespace API.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("BellTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("BellType")
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Description")
+                    b.Property<bool>("Done")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Drop")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("DropDate")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("FirstReminderDateTime")
+                    b.Property<string>("DueTime")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ImageUrl")
+                    b.Property<bool>("Flag")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Text")
                         .HasColumnType("TEXT");
-
-                    b.Property<int>("ReminderIntervalCount")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("ReminderIntervalUnits")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("ReminderSet")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("ScheduleStatus")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("TailCount")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("TailUnits")
-                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");

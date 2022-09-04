@@ -65,7 +65,7 @@ Features
     SQLite: Open Database
     >> SQLITE EXPLORER will appear at bottom of VsCode Explorer window (left-hand menu)
 
-## DROP DB AND RE-CREATE WITH SEED DATA (and logger)
+## CREATE SEED DATA (and logger)
 > In Data folder
   - create c# class:
     DbInitializer.cs
@@ -80,9 +80,18 @@ Features
           DbInitializer.Initialize(context);
         }
         catch (Exception ex)  { logger.LogError(ex, "Problem migrating data"); }
-> In terminal (API folder)
-    dotnet ef database drop
-    dotnet watch run
+
+## RE-DO DB WITH NEW DATA        
+    -1. Manually delete Migration folder (with all contents)
+    -2. drop old db
+        > In terminal (API folder)
+            dotnet ef database drop
+    -3. re-run migration
+        (see instructions in migration section above)
+    -4. update db
+        (see inscructions in create/update db above)
+    -4. run db initializer code (in Program.cs)
+        dotnet watch run
     ** initializer runs when app starts **
     ** logger needed because this is upstream of the exception page **
     ** use "using" keyword with scope so that the var contents get procssed by garbage collection automatically **

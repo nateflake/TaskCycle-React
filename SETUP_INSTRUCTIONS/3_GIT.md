@@ -23,5 +23,3 @@
     git commit -m "<commit message>"
   - undo commit (if errors before pushing to remote)
     git update-ref -d HEAD
-
-  
